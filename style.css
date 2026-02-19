@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .body {
     display: flex;
     flex-direction: column;
@@ -11,12 +16,21 @@
     display: flex;
 }
 
+.logo {
+    font-family: Sacramento, cursive;
+    font-weight: 800;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
 ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     gap: 20px;
+}
+
+li {
+    white-space: nowrap;
 }
 
 .header {
@@ -47,4 +61,122 @@ h1 {
 .theme-left p {
     color: #E5E7EB;
     font-size: 18px;
+}
+
+button {
+    padding: 6px 20px;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.button-theme {
+    color: #F9FaF8;
+    background-color: #3882F6;
+    border: none;
+    align-self: flex-start;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    padding: 30px 200px;
+}
+
+.samples {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px 200px;
+}
+
+.samples p {
+    width: 200px;
+}
+
+.samples img {
+    border: 2px solid #3882F6;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 250px;
+    background-color: #E5E7EB;
+}
+
+.sarah {
+    color: #1F2937;
+    font-weight: 300;
+    font-size: 36px;
+    font-style: italic;
+}
+
+.signature {
+    font-weight: 800;
+    font-size: 24px;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.sign-up {
+    background-color: #3882F6;
+    margin: 100px 200px;
+    border-radius: 6px;
+    display: flex;
+    padding: 50px 100px;
+    justify-content: space-between;
+}
+
+h3 {
+    color: #F9FaF8;
+    font-size: 24px;
+}
+
+.button-sign-up {
+    align-self: flex-end;
+    background-color: #3882F6;
+    border: 2px solid #F9FaF8;
+    color: #F9FaF8;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.sign-up p {
+    color: #E5E7EB;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.copyright {
+    background-color: #1F2937;
+}
+
+.copyright p {
+    text-align: center;
+    color: #E5E7EB;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.body, 
+.header,
+.footer,
+.theme,
+.theme-left,
+.content,
+.samples,
+.testimonial,
+.sign-up {
+    flex: 1;
 }
